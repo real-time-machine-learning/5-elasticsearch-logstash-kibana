@@ -2,15 +2,27 @@
     "template":"stock_price-*",
     "mappings":{
         "counter":{
-            "properties":{
-                "symbol":{
-                    "type":"text"
+            "properties":{                               
+                "Open":{
+                    "type":"float"
+                },
+                "High":{
+                    "type":"float"
+                },
+                "Low":{
+                    "type":"float"
+                },
+                "Close":{
+                    "type":"float"
+                },
+                "Volume":{
+                    "type":"float"
                 },
                 "timestamp":{
                     "type":"date"
                 },
-                "price":{
-                    "type":"float" 
+                "Symbol":{
+                    "type":"keyword" 
                 }
             }
         }

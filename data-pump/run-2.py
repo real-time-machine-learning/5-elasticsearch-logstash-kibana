@@ -43,7 +43,8 @@ for date in read_date_list:
         data["timestamp"] = list(map(lambda x: ConvertTime(x, date_converted),
                                      data["timestamp_raw"]/1000))
         data = data.drop("timestamp_raw",1)
-        
+        data["symbol"] = symbol 
+
         for index, row in data.iterrows():
             channel.basic_publish(exchange = exchange_name,
                                   routing_key = "",
