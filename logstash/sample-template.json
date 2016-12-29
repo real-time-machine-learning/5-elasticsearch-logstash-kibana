@@ -1,0 +1,18 @@
+{
+    "template":"stock_price-*",
+    "mappings":{
+        "counter":{
+            "properties":{
+                "symbol":{
+                    "type":"text"
+                },
+                "timestamp":{
+                    "type":"date"
+                },
+                "price":{
+                    "type":"float" 
+                }
+            }
+        }
+    }
+}
