@@ -1,11 +1,30 @@
 
+data-dump:
+  build: ./data-pump/
+  links:
+   - rabbitmq 
+
+rabbitmq: 
+  image: rabbitmq:3-management
+  ports:
+   - "15672:15672"   
+   - "5672:5672"
+
+logstash:
+  build: ./logstash/
+  links: 
+   - elasticsearch 
+   - rabbitmq 
+
 elasticsearch:
   image: elasticsearch:5.0
   ports:
    - "9200:9200"
+
 kibana:
   image: kibana:5.0
   links: 
    - elasticsearch
   ports: 
    - "5601:5601"
+
