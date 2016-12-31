@@ -11,3 +11,19 @@
 ``shell
 git clone https://github.com/real-time-machine-learning/5-elasticsearch-logstash-kibana
 ``
+
+## 启动Elasticsearch Kibana集群
+
+只需执行下面命令
+
+```shell
+docker-compose up 
+```
+
+运行完成之后即可在`http://localhost:5601`访问到Kibana界面
+
+
+
+
+--- 
+《实时机器学习实战》 彭河森、汪涵
