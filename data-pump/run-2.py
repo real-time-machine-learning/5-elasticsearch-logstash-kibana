@@ -50,3 +50,4 @@ for date in read_date_list:
                                   routing_key = "",
                                   body = row.to_json())
                             
+connection.close() 
